@@ -18,3 +18,6 @@ const currentTime = localStorage.getItem('videoplayer-current-time');
 if (currentTime !== null) {
   player.setCurrentTime(currentTime);
 }
+
+
+
