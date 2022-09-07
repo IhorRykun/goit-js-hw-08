@@ -10,22 +10,19 @@ autoLookText();
 // console.log(label);
 // console.log(textarea);
 
-
 let formData = {};
-
-
 
 form.addEventListener('input', throttle(textTime, 500));
 
 function textTime() {
-    formData = {
-      email: input.value,
-      message: textarea.value,
-    };
-    localStorage.setItem('feedback-from-state', JSON.stringify(formData));
+  formData = {
+    email: input.value,
+    message: textarea.value,
+  };
+  localStorage.setItem('feedback-from-state', JSON.stringify(formData));
 }
 
- function autoLookText() {
+function autoLookText() {
   const saveText = localStorage.getItem('feedback-form-state');
 
   if (saveText) {
@@ -46,4 +43,4 @@ function onSubmitForm(e) {
   console.log(obj);
   localStorage.removeItem('feedback-form-state');
   form.reset();
-    }
+}
