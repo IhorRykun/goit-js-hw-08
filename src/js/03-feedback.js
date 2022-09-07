@@ -24,11 +24,10 @@ function textTime() {
 
 function autoLookText() {
   const saveText = localStorage.getItem('feedback-form-state');
-
+  const parseText = JSON.parse(saveText);
   if (saveText) {
-    const parseText = JSON.parse(saveText);
-    input.value = parseText.email;
-    textarea.value = parseText.message;
+    input.value = parseText.email || '';
+    textarea.value = parseText.message || '';
   }
 }
 
