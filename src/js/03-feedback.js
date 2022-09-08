@@ -42,4 +42,6 @@ function onSubmitForm(e) {
   console.log(obj);
   localStorage.removeItem('feedback-form-state');
   form.reset();
+  localStorage.clear();
 }
+
