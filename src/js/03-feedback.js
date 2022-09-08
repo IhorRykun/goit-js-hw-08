@@ -12,7 +12,7 @@ autoLookText();
 
 let formData = {};
 
-form.addEventListener('input', throttle(textTime, 500));
+form.addEventListener('input',throttle(textTime, 500));
 
 function textTime() {
   formData = {
