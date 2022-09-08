@@ -19,7 +19,7 @@ function textTime() {
     email: input.value,
     message: textarea.value,
   };
-  localStorage.setItem('feedback-from-state', JSON.stringify(formData));
+  localStorage.setItem('feedback-form-state', JSON.stringify(formData));
 }
 
 function autoLookText() {
